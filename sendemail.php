@@ -1,3 +1,4 @@
+
 <?php
 
 $name = @trim(stripslashes($_POST["name"]));
