@@ -193,20 +193,6 @@ jQuery(function($) {'use strict';
 	});
 
 
-// Contact form
-var form = $("#main-contact-form").submit(function() {
-$.ajax({
-type: "POST",
-url: "sendemail.php",
-data: $(this).serialize()
-}).done(function() {
-$(this).find("input").val("");
-$("#main-contact-form").trigger("reset");
-});
-return false;
-});
-
-
 
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
